@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: auto;
+  margin-top: 20px;
+  width: 1000px;
+  border: 10px solid black;
+  -webkit-box-shadow: 0 5px 5px gray;
+          box-shadow: 0 5px 5px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .container {
+  width: 500px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .container .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.wrapper .container .header img {
+  width: 30px;
+  height: 30px;
+}
+
+.wrapper .container .header p {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.wrapper .sign-up-container {
+  width: 500px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .sign-up-container .login-contant {
+  width: 300px;
+  margin: 50px 0 100px 0;
+}
+
+.wrapper .sign-up-container .login-contant .welcome p {
+  color: gray;
+}
+
+.wrapper .sign-up-container .login-contant .sign-up {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid grey;
+}
+
+.wrapper .sign-up-container .login-contant .sign-up img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.wrapper .sign-up-container .login-contant .ruler {
+  margin: 20px 0px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .sign-up-container .login-contant .ruler div {
+  width: 100%;
+  height: 0px;
+  border: 1px solid gray;
+}
+
+.wrapper .sign-up-container .login-contant .ruler p {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+  background-color: white;
+  padding: 5px;
+}
+
+.wrapper .sign-up-container .login-contant > div {
+  margin-top: 20px;
+}
+
+.wrapper .sign-up-container .login-contant > div label {
+  font-weight: 600;
+}
+
+.wrapper .sign-up-container .login-contant > div input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.wrapper .sign-up-container .login-contant .sign-in {
+  border: none;
+  height: 40px;
+}
+
+.wrapper .sign-up-container .login-contant .sign-in button {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .sign-up-container .login-contant .check-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .sign-up-container .login-contant .check-box .check {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .sign-up-container .login-contant .check-box .check input {
+  width: 30px;
+  margin-top: -2px;
+}
+
+.wrapper .sign-up-container .login-contant .sign-in button {
+  background-color: #00DFA2;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.wrapper .cover-image {
+  width: 500px;
+}
+
+.wrapper .cover-image img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=styles.css.map */

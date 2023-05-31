@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first-layout {
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .wrapper {
+        background-color: green;
+        width: 300px;
+        padding: 10px;
+        padding-top: 20px;
+
+        .page-header,
+        .nav,
+        .article,
+        .section,
+        .aside,
+        .footer {
+            width: 90%;
+            margin: auto;
+            background-color: greenyellow;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .article {
+
+            .article-header,
+            .main {
+                width: 90%;
+                margin: auto;
+                background-color: white;
+                padding: 4px;
+                margin: 10px;
+
+            }
+            .main {
+                height: 100px;
+            }
+        }
+    }
+}
+.second-layout {
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .wrapper {
+        background-color: green;
+        width: 500px;
+        padding: 10px;
+        padding-top: 20px;
+
+        .page-header,
+        .nav,
+        .article,
+        .section,
+        .aside,
+        .footer {
+            width: 90%;
+            margin: auto;
+            background-color: greenyellow;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .article {
+            display: flex;
+            justify-content: space-between;
+
+            .article1 {
+                width: 65%;
+                background-color: rgb(90, 221, 119);
+
+                .article-header,
+                .main {
+                    width: 90%;
+                    margin: auto;
+                    background-color: white;
+                    padding: 4px;
+                    margin: 10px;
+
+                }
+                .main {
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .article2 {
+                width: 30%;
+                margin-right: 0;
+                background-color: rgb(90, 221, 119);
+                padding: 5px;
+                
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+.third-layout {
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .wrapper {
+        background-color: green;
+        width: 600px;
+        padding: 10px;
+        padding-top: 20px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 4fr 1fr 1fr;
+        grid-template-areas: "page-header page-header page-header"
+                                "nav nav nav"
+                                "article aside1 aside2"
+                                "article aside3 aside3"
+                                "section aside3 aside3"
+                                "footer footer footer";
+        .page-header, .nav, .article, .aside ,.section,.footer{
+            display: grid;
+            align-items: center;
+            // min-height: 30px;
+            padding: 5px;
+        }
+        .page-header{
+            grid-area: page-header;
+            background-color: greenyellow;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: greenyellow;
+        }
+        .article{
+            grid-area: article;
+            background-color: greenyellow;
+            text-align: center;
+            .article-header,
+            .main {
+                width: 90%;
+                margin: auto;
+                background-color: white;
+                padding: 4px;
+                margin: 5px;
+                text-align: left;
+
+            }
+            .main {
+                height: 50px;
+            }
+            .article-header{
+                background-color: aliceblue;
+            }
+        }
+        .aside1{
+            grid-area: aside1;
+            background-color: greenyellow;
+            height: 50px;
+        }
+        .aside2{
+            grid-area: aside2;
+            background-color: greenyellow;
+
+        }
+        .aside3{
+            grid-area: aside3;
+            background-color: greenyellow;
+            
+        }
+        .section{
+            grid-area: section;
+            background-color: greenyellow;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: greenyellow;
+        }
+    }
+}
